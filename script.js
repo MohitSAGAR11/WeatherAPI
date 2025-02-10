@@ -8,7 +8,7 @@ const form = document.querySelector('form')
 const searchField = document.querySelector('.searchField')
 
 async function fetchData(city) {
-    let endpoint = `http://api.weatherapi.com/v1/current.json?key=35af7ff606db422880d141328231305&q=${city}&aqi=no`
+    let endpoint = `https://api.weatherapi.com/v1/current.json?key=35af7ff606db422880d141328231305&q=${city}&aqi=no`
 
     const response = await fetch(endpoint);
     const data = await response.json();
